@@ -1,0 +1,299 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* ################ utility class ################### */
+.md-heading{
+    font-size: 5em;
+}
+
+.md-text{
+    font-size: 2em;
+}
+/* ############## navbar styling ################### */
+.navbar-container{
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    opacity: 0.85;
+    z-index: 999;
+    width: 100%;
+    
+}
+
+.navbar-list ul{
+    list-style: none;
+}
+.navbar-list ul li{
+    display: inline-block;
+    padding:  5px 10px;
+    font-size: 1.8em;
+    border-radius: 50px;
+    margin: 20px 10px;
+    
+}
+.navbar-list ul li a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.navbar-list a:hover{
+    color:rgb(255, 255, 94);
+}
+.navbar-heading{
+    display: inline-block;
+    color: white;
+    font-size: 2.5em;
+    position: relative;
+    padding: 25px;
+    font-weight: 8 00;
+}
+
+/* ######################### header styling ############### */
+.header{
+    min-height: 100vh;
+    background: url("../img/miguel-gonzalez-1w_eP6BKBdY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    /* border: 2px solid red; */
+}
+.header-heading {
+    position: absolute;
+    /* border: 2px solid green; */
+    bottom: 30%;
+    left: 10%;
+    width: 600px;
+    height: 200px;
+}
+.header-heading h1 {
+   font-size: 10em;
+   color: white;
+}
+.header-heading p{
+    font-size: 2em;
+    color: white;
+}
+
+/* ##################### showcase container ##################### */
+#showcase{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+
+#showcase .showcase-photographer{
+    background: black;
+    width: 33.3%; 
+    
+    
+}
+
+.showcase-photographer-img img{
+    width: 100%;
+    padding: 5rem;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.showcase-name {
+    margin-top: 2em;
+}
+.showcase-name h1{
+    font-weight: 100;
+}
+.showcase-name p{
+    font-weight: 100;
+    margin-bottom: 4em;
+}
+.showcase-name h1, .showcase-name p{
+    color: white;
+    text-align: center;
+    
+}
+.showcase-about{
+    width: 66.7%;
+    display: flex;
+    flex-direction: column;
+}
+.showcase-wto{
+    background: #a0b9bd;
+    color: white;
+}
+.showcase-aboutme , .showcase-wto{
+    height: 50%;
+}
+.showcase-about h1,.showcase-about p{
+    padding: 5rem 2rem;
+}
+
+/* ################### gallery ########################## */
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-height: 100vh; */
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.3%;
+}
+.box img{
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ############ illustration ############## */
+#iilustration{
+    border: 2px solid #a0b9bd ;
+    background: #a0b9bd;
+}
+.iilustration-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5em 6em;
+}
+.iilustration-image, .iilustration-line, .iilustration-line2{
+    width: 33.3%;
+    position: relative;
+}
+.iilustration-image img{
+    width: 100%;
+    display: flex;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iilustration-line h1{
+    font-size: 6em;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    letter-spacing: 1.5px;
+    color: white;
+}
+.iilustration-line2 p{
+    font-size: 3em;
+    letter-spacing: 1.5px;
+    position: absolute;
+    right:  2em;
+    color: white;
+}
+
+/* ######################### content2 ####################### */
+#content2{
+    /* border: 2px solid red; */
+    display: flex;
+}
+.content2-box{
+    width: 33.3%;
+}
+.content2-image{
+    min-height: 100%;
+    background: url("../img/miguel-gonzalez-C0ZKhrUuU0w-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content2-text h1{
+    color: white;
+}
+.content2-text {
+    font-size: 4em;
+    padding-top: 30%;
+    background: black;
+    text-align: center;
+}
+.content2-speacial{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.content2-speacial-paragraph,.content2-speacial-heading{
+    height: 25%;
+    padding: 1em 1em;
+}
+.content2-speacial-heading{
+    font-size: 3em;
+}
+.content2-speacial-paragraph{
+    font-size: 1.5em;
+    color: #4e4e4e;
+}
+.content2-speacial-image{
+    min-width: 100%;
+    height: 50%;
+    background: url("../img/IMG_20210520_120029_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* ############### about us ################## */
+#about-us{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: #a0b9bd;
+}
+.about-image, .about-content{
+    width: 43%;
+    height: 100%;
+    margin: 5em;
+    padding: 5rem;
+    color: white;
+}
+.about-image img{
+    max-width: 100%;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-content h1{
+    font-size: 5em;
+    padding: 1em 0;
+}
+.about-content h5{
+    font-size: 3em;
+    font-weight: 100;
+    padding-top: 2em;
+}
+.about-content p{
+    font-size: 2em;
+    font-weight: 300;
+}
+/* ############ footer ############### */
+
+.footer{
+    background-color: #262328;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: auto;
+}
+.footer p{
+    font-size: 2em;
+}
+.social-media-links i {
+    margin: 2rem;
+    text-decoration: none;
+}
+.social-media-links a:visited,.social-media-links a:link{
+    color: white;
+    text-decoration: none;
+}
+
+
